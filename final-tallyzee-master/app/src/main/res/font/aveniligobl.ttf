@@ -1,0 +1,593 @@
+tchpoints
+ for field modification.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/spi/TransportService.html#capabilities--">capabilities()</a></span> - Method in class com.sun.jdi.connect.spi.<a href="com/sun/jdi/connect/spi/TransportService.html" title="class in com.sun.jdi.connect.spi">TransportService</a></dt>
+<dd>
+<div class="block">Returns the capabilities of the transport service.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/spi/TransportService.Capabilities.html#Capabilities--">Capabilities()</a></span> - Constructor for class com.sun.jdi.connect.spi.<a href="com/sun/jdi/connect/spi/TransportService.Capabilities.html" title="class in com.sun.jdi.connect.spi">TransportService.Capabilities</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/event/ExceptionEvent.html#catchLocation--">catchLocation()</a></span> - Method in interface com.sun.jdi.event.<a href="com/sun/jdi/event/ExceptionEvent.html" title="interface in com.sun.jdi.event">ExceptionEvent</a></dt>
+<dd>
+<div class="block">Gets the location where the exception will be caught.</div>
+</dd>
+<dt><a href="com/sun/jdi/CharType.html" title="interface in com.sun.jdi"><span class="typeNameLink">CharType</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">The type of all primitive char values accessed in
+ the target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/CharValue.html" title="interface in com.sun.jdi"><span class="typeNameLink">CharValue</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Provides access to a primitive <code>char</code> value in
+ the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/PrimitiveValue.html#charValue--">charValue()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/PrimitiveValue.html" title="interface in com.sun.jdi">PrimitiveValue</a></dt>
+<dd>
+<div class="block">Converts this value to a CharValue and returns the result
+ as a char.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/Connector.SelectedArgument.html#choices--">choices()</a></span> - Method in interface com.sun.jdi.connect.<a href="com/sun/jdi/connect/Connector.SelectedArgument.html" title="interface in com.sun.jdi.connect">Connector.SelectedArgument</a></dt>
+<dd>
+<div class="block">Return the possible values for the argument</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachine.html#classesByName-java.lang.String-">classesByName(String)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachine.html" title="interface in com.sun.jdi">VirtualMachine</a></dt>
+<dd>
+<div class="block">Returns the loaded reference types that
+ match a given name.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#classLoader--">classLoader()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Gets the classloader object which loaded the class corresponding
+ to this type.</div>
+</dd>
+<dt><a href="com/sun/jdi/ClassLoaderReference.html" title="interface in com.sun.jdi"><span class="typeNameLink">ClassLoaderReference</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">A class loader object from the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ClassNotLoadedException.html#className--">className()</a></span> - Method in exception com.sun.jdi.<a href="com/sun/jdi/ClassNotLoadedException.html" title="class in com.sun.jdi">ClassNotLoadedException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/event/ClassUnloadEvent.html#className--">className()</a></span> - Method in interface com.sun.jdi.event.<a href="com/sun/jdi/event/ClassUnloadEvent.html" title="interface in com.sun.jdi.event">ClassUnloadEvent</a></dt>
+<dd>
+<div class="block">Returns the name of the class that has been unloaded.</div>
+</dd>
+<dt><a href="com/sun/jdi/ClassNotLoadedException.html" title="class in com.sun.jdi"><span class="typeNameLink">ClassNotLoadedException</span></a> - Exception in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Thrown to indicate that the requested class has
+ not yet been loaded through the appropriate class loader.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ClassNotLoadedException.html#ClassNotLoadedException-java.lang.String-">ClassNotLoadedException(String)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/ClassNotLoadedException.html" title="class in com.sun.jdi">ClassNotLoadedException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ClassNotLoadedException.html#ClassNotLoadedException-java.lang.String-java.lang.String-">ClassNotLoadedException(String, String)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/ClassNotLoadedException.html" title="class in com.sun.jdi">ClassNotLoadedException</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/sun/jdi/ClassNotPreparedException.html" title="class in com.sun.jdi"><span class="typeNameLink">ClassNotPreparedException</span></a> - Exception in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Thrown to indicate that the requested operation cannot be
+ completed because the specified class has not yet been prepared.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ClassNotPreparedException.html#ClassNotPreparedException--">ClassNotPreparedException()</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/ClassNotPreparedException.html" title="class in com.sun.jdi">ClassNotPreparedException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ClassNotPreparedException.html#ClassNotPreparedException-java.lang.String-">ClassNotPreparedException(String)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/ClassNotPreparedException.html" title="class in com.sun.jdi">ClassNotPreparedException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#classObject--">classObject()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Returns the class object that corresponds to this type in the
+ target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/ClassObjectReference.html" title="interface in com.sun.jdi"><span class="typeNameLink">ClassObjectReference</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">An instance of java.lang.Class from the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/PathSearchingVirtualMachine.html#classPath--">classPath()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/PathSearchingVirtualMachine.html" title="interface in com.sun.jdi">PathSearchingVirtualMachine</a></dt>
+<dd>
+<div class="block">Get the class path for this virtual machine.</div>
+</dd>
+<dt><a href="com/sun/jdi/event/ClassPrepareEvent.html" title="interface in com.sun.jdi.event"><span class="typeNameLink">ClassPrepareEvent</span></a> - Interface in <a href="com/sun/jdi/event/package-summary.html">com.sun.jdi.event</a></dt>
+<dd>
+<div class="block">Notification of a class prepare in the target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/request/ClassPrepareRequest.html" title="interface in com.sun.jdi.request"><span class="typeNameLink">ClassPrepareRequest</span></a> - Interface in <a href="com/sun/jdi/request/package-summary.html">com.sun.jdi.request</a></dt>
+<dd>
+<div class="block">Request for notification when a class is prepared in the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#classPrepareRequests--">classPrepareRequests()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Return an unmodifiable list of the enabled and disabled class prepare requests.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/event/ClassUnloadEvent.html#classSignature--">classSignature()</a></span> - Method in interface com.sun.jdi.event.<a href="com/sun/jdi/event/ClassUnloadEvent.html" title="interface in com.sun.jdi.event">ClassUnloadEvent</a></dt>
+<dd>
+<div class="block">Returns the JNI-style signature of the class that has been unloaded.</div>
+</dd>
+<dt><a href="com/sun/jdi/ClassType.html" title="interface in com.sun.jdi"><span class="typeNameLink">ClassType</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">A mirror of a class in the target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/event/ClassUnloadEvent.html" title="interface in com.sun.jdi.event"><span class="typeNameLink">ClassUnloadEvent</span></a> - Interface in <a href="com/sun/jdi/event/package-summary.html">com.sun.jdi.event</a></dt>
+<dd>
+<div class="block">Notification of a class unload in the target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/request/ClassUnloadRequest.html" title="interface in com.sun.jdi.request"><span class="typeNameLink">ClassUnloadRequest</span></a> - Interface in <a href="com/sun/jdi/request/package-summary.html">com.sun.jdi.request</a></dt>
+<dd>
+<div class="block">Request for notification when a class is unloaded in the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#classUnloadRequests--">classUnloadRequests()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Return an unmodifiable list of the enabled and disabled class unload requests.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/spi/Connection.html#close--">close()</a></span> - Method in class com.sun.jdi.connect.spi.<a href="com/sun/jdi/connect/spi/Connection.html" title="class in com.sun.jdi.connect.spi">Connection</a></dt>
+<dd>
+<div class="block">Closes this connection.</div>
+</dd>
+<dt><a href="com/sun/jdi/connect/spi/ClosedConnectionException.html" title="class in com.sun.jdi.connect.spi"><span class="typeNameLink">ClosedConnectionException</span></a> - Exception in <a href="com/sun/jdi/connect/spi/package-summary.html">com.sun.jdi.connect.spi</a></dt>
+<dd>
+<div class="block">This exception may be thrown as a result of an asynchronous
+ close of a <a href="com/sun/jdi/connect/spi/Connection.html" title="class in com.sun.jdi.connect.spi"><code>Connection</code></a> while an I/O operation is
+ in progress.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/spi/ClosedConnectionException.html#ClosedConnectionException--">ClosedConnectionException()</a></span> - Constructor for exception com.sun.jdi.connect.spi.<a href="com/sun/jdi/connect/spi/ClosedConnectionException.html" title="class in com.sun.jdi.connect.spi">ClosedConnectionException</a></dt>
+<dd>
+<div class="block">Constructs a <tt>ClosedConnectionException</tt> with no detail
+ message.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/spi/ClosedConnectionException.html#ClosedConnectionException-java.lang.String-">ClosedConnectionException(String)</a></span> - Constructor for exception com.sun.jdi.connect.spi.<a href="com/sun/jdi/connect/spi/ClosedConnectionException.html" title="class in com.sun.jdi.connect.spi">ClosedConnectionException</a></dt>
+<dd>
+<div class="block">Constructs a <tt>ClosedConnectionException</tt> with the
+ specified detail message.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/Location.html#codeIndex--">codeIndex()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/Location.html" title="interface in com.sun.jdi">Location</a></dt>
+<dd>
+<div class="block">Gets the code position within this location's method.</div>
+</dd>
+<dt><a href="com/sun/jdi/package-summary.html">com.sun.jdi</a> - package com.sun.jdi</dt>
+<dd>
+<div class="block">This is the core package of the Java Debug
+ Interface (JDI), it defines mirrors for values, types, and the target
+ VirtualMachine itself - as well bootstrapping facilities.</div>
+</dd>
+<dt><a href="com/sun/jdi/connect/package-summary.html">com.sun.jdi.connect</a> - package com.sun.jdi.connect</dt>
+<dd>
+<div class="block">This package defines connections between the virtual machine
+ using the JDI and the target virtual machine.</div>
+</dd>
+<dt><a href="com/sun/jdi/connect/spi/package-summary.html">com.sun.jdi.connect.spi</a> - package com.sun.jdi.connect.spi</dt>
+<dd>
+<div class="block">This package comprises the interfaces and classes used to
+ develop new <a href="com/sun/jdi/connect/spi/TransportService.html" title="class in com.sun.jdi.connect.spi"><code>TransportService</code></a>
+ implementations.</div>
+</dd>
+<dt><a href="com/sun/jdi/event/package-summary.html">com.sun.jdi.event</a> - package com.sun.jdi.event</dt>
+<dd>
+<div class="block">This package defines JDI events and event processing.</div>
+</dd>
+<dt><a href="com/sun/jdi/request/package-summary.html">com.sun.jdi.request</a> - package com.sun.jdi.request</dt>
+<dd>
+<div class="block">This package is used to request that a JDI
+ event be sent under specified conditions.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ArrayType.html#componentSignature--">componentSignature()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ArrayType.html" title="interface in com.sun.jdi">ArrayType</a></dt>
+<dd>
+<div class="block">Gets the JNI signature of the components of this
+ array class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ArrayType.html#componentType--">componentType()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ArrayType.html" title="interface in com.sun.jdi">ArrayType</a></dt>
+<dd>
+<div class="block">Returns the component type of this array,
+ as specified in the array declaration.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ArrayType.html#componentTypeName--">componentTypeName()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ArrayType.html" title="interface in com.sun.jdi">ArrayType</a></dt>
+<dd>
+<div class="block">Returns a text representation of the component
+ type of this array.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ClassType.html#concreteMethodByName-java.lang.String-java.lang.String-">concreteMethodByName(String, String)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ClassType.html" title="interface in com.sun.jdi">ClassType</a></dt>
+<dd>
+<div class="block">Returns a the single non-abstract <a href="com/sun/jdi/Method.html" title="interface in com.sun.jdi"><code>Method</code></a> visible from
+ this class that has the given name and signature.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachineManager.html#connectedVirtualMachines--">connectedVirtualMachines()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachineManager.html" title="interface in com.sun.jdi">VirtualMachineManager</a></dt>
+<dd>
+<div class="block">Lists all target VMs which are connected to the debugger.</div>
+</dd>
+<dt><a href="com/sun/jdi/connect/spi/Connection.html" title="class in com.sun.jdi.connect.spi"><span class="typeNameLink">Connection</span></a> - Class in <a href="com/sun/jdi/connect/spi/package-summary.html">com.sun.jdi.connect.spi</a></dt>
+<dd>
+<div class="block">A connection between a debugger and a target VM which it debugs.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/spi/Connection.html#Connection--">Connection()</a></span> - Constructor for class com.sun.jdi.connect.spi.<a href="com/sun/jdi/connect/spi/Connection.html" title="class in com.sun.jdi.connect.spi">Connection</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/sun/jdi/connect/Connector.html" title="interface in com.sun.jdi.connect"><span class="typeNameLink">Connector</span></a> - Interface in <a href="com/sun/jdi/connect/package-summary.html">com.sun.jdi.connect</a></dt>
+<dd>
+<div class="block">A method of connection between a debugger and a target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/connect/Connector.Argument.html" title="interface in com.sun.jdi.connect"><span class="typeNameLink">Connector.Argument</span></a> - Interface in <a href="com/sun/jdi/connect/package-summary.html">com.sun.jdi.connect</a></dt>
+<dd>
+<div class="block">Specification for and value of a Connector argument.</div>
+</dd>
+<dt><a href="com/sun/jdi/connect/Connector.BooleanArgument.html" title="interface in com.sun.jdi.connect"><span class="typeNameLink">Connector.BooleanArgument</span></a> - Interface in <a href="com/sun/jdi/connect/package-summary.html">com.sun.jdi.connect</a></dt>
+<dd>
+<div class="block">Specification for and value of a Connector argument,
+ whose value is Boolean.</div>
+</dd>
+<dt><a href="com/sun/jdi/connect/Connector.IntegerArgument.html" title="interface in com.sun.jdi.connect"><span class="typeNameLink">Connector.IntegerArgument</span></a> - Interface in <a href="com/sun/jdi/connect/package-summary.html">com.sun.jdi.connect</a></dt>
+<dd>
+<div class="block">Specification for and value of a Connector argument,
+ whose value is an integer.</div>
+</dd>
+<dt><a href="com/sun/jdi/connect/Connector.SelectedArgument.html" title="interface in com.sun.jdi.connect"><span class="typeNameLink">Connector.SelectedArgument</span></a> - Interface in <a href="com/sun/jdi/connect/package-summary.html">com.sun.jdi.connect</a></dt>
+<dd>
+<div class="block">Specification for and value of a Connector argument,
+ whose value is a String selected from a list of choices.</div>
+</dd>
+<dt><a href="com/sun/jdi/connect/Connector.StringArgument.html" title="interface in com.sun.jdi.connect"><span class="typeNameLink">Connector.StringArgument</span></a> - Interface in <a href="com/sun/jdi/connect/package-summary.html">com.sun.jdi.connect</a></dt>
+<dd>
+<div class="block">Specification for and value of a Connector argument,
+ whose value is a String.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#constantPool--">constantPool()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Returns the raw bytes of the constant pool in the format of the
+ constant_pool item of the Class File Format in the Java Virtual
+ Machine Specification.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#constantPoolCount--">constantPoolCount()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Returns the number of entries in the constant pool plus one.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createAccessWatchpointRequest-com.sun.jdi.Field-">createAccessWatchpointRequest(Field)</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled watchpoint which watches accesses to the
+ specified field.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createBreakpointRequest-com.sun.jdi.Location-">createBreakpointRequest(Location)</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/BreakpointRequest.html" title="interface in com.sun.jdi.request"><code>BreakpointRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createClassPrepareRequest--">createClassPrepareRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/ClassPrepareRequest.html" title="interface in com.sun.jdi.request"><code>ClassPrepareRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createClassUnloadRequest--">createClassUnloadRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/ClassUnloadRequest.html" title="interface in com.sun.jdi.request"><code>ClassUnloadRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createExceptionRequest-com.sun.jdi.ReferenceType-boolean-boolean-">createExceptionRequest(ReferenceType, boolean, boolean)</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/ExceptionRequest.html" title="interface in com.sun.jdi.request"><code>ExceptionRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createMethodEntryRequest--">createMethodEntryRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/MethodEntryRequest.html" title="interface in com.sun.jdi.request"><code>MethodEntryRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createMethodExitRequest--">createMethodExitRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/MethodExitRequest.html" title="interface in com.sun.jdi.request"><code>MethodExitRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createModificationWatchpointRequest-com.sun.jdi.Field-">createModificationWatchpointRequest(Field)</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled watchpoint which watches accesses to the
+ specified field.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createMonitorContendedEnteredRequest--">createMonitorContendedEnteredRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/MonitorContendedEnteredRequest.html" title="interface in com.sun.jdi.request"><code>MonitorContendedEnteredRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createMonitorContendedEnterRequest--">createMonitorContendedEnterRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/MonitorContendedEnterRequest.html" title="interface in com.sun.jdi.request"><code>MonitorContendedEnterRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createMonitorWaitedRequest--">createMonitorWaitedRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/MonitorWaitedRequest.html" title="interface in com.sun.jdi.request"><code>MonitorWaitedRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createMonitorWaitRequest--">createMonitorWaitRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/MonitorWaitRequest.html" title="interface in com.sun.jdi.request"><code>MonitorWaitRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createStepRequest-com.sun.jdi.ThreadReference-int-int-">createStepRequest(ThreadReference, int, int)</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/StepRequest.html" title="interface in com.sun.jdi.request"><code>StepRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createThreadDeathRequest--">createThreadDeathRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/ThreadDeathRequest.html" title="interface in com.sun.jdi.request"><code>ThreadDeathRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createThreadStartRequest--">createThreadStartRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/ThreadStartRequest.html" title="interface in com.sun.jdi.request"><code>ThreadStartRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachineManager.html#createVirtualMachine-com.sun.jdi.connect.spi.Connection-java.lang.Process-">createVirtualMachine(Connection, Process)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachineManager.html" title="interface in com.sun.jdi">VirtualMachineManager</a></dt>
+<dd>
+<div class="block">Create a virtual machine mirror for a target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachineManager.html#createVirtualMachine-com.sun.jdi.connect.spi.Connection-">createVirtualMachine(Connection)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachineManager.html" title="interface in com.sun.jdi">VirtualMachineManager</a></dt>
+<dd>
+<div class="block">Creates a new virtual machine.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#createVMDeathRequest--">createVMDeathRequest()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Creates a new disabled <a href="com/sun/jdi/request/VMDeathRequest.html" title="interface in com.sun.jdi.request"><code>VMDeathRequest</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ThreadReference.html#currentContendedMonitor--">currentContendedMonitor()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ThreadReference.html" title="interface in com.sun.jdi">ThreadReference</a></dt>
+<dd>
+<div class="block">Returns an <a href="com/sun/jdi/ObjectReference.html" title="interface in com.sun.jdi"><code>ObjectReference</code></a> for the monitor, if any,
+ for which this thread is currently waiting.</div>
+</dd>
+</dl>
+<a name="I:D">
+<!--   -->
+</a>
+<h2 class="title">D</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/Location.html#declaringType--">declaringType()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/Location.html" title="interface in com.sun.jdi">Location</a></dt>
+<dd>
+<div class="block">Gets the type to which this Location belongs.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/TypeComponent.html#declaringType--">declaringType()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/TypeComponent.html" title="interface in com.sun.jdi">TypeComponent</a></dt>
+<dd>
+<div class="block">Returns the type in which this component was declared.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/Connector.html#defaultArguments--">defaultArguments()</a></span> - Method in interface com.sun.jdi.connect.<a href="com/sun/jdi/connect/Connector.html" title="interface in com.sun.jdi.connect">Connector</a></dt>
+<dd>
+<div class="block">Returns the arguments accepted by this Connector and their
+ default values.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachineManager.html#defaultConnector--">defaultConnector()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachineManager.html" title="interface in com.sun.jdi">VirtualMachineManager</a></dt>
+<dd>
+<div class="block">Identifies the default connector.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#defaultStratum--">defaultStratum()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Returns the default stratum for this reference type.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ClassLoaderReference.html#definedClasses--">definedClasses()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ClassLoaderReference.html" title="interface in com.sun.jdi">ClassLoaderReference</a></dt>
+<dd>
+<div class="block">Returns a list of all loaded classes that were defined by this
+ class loader.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#deleteAllBreakpoints--">deleteAllBreakpoints()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Remove all breakpoints managed by this EventRequestManager.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#deleteEventRequest-com.sun.jdi.request.EventRequest-">deleteEventRequest(EventRequest)</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Removes an eventRequest.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#deleteEventRequests-java.util.List-">deleteEventRequests(List&lt;? extends EventRequest&gt;)</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Removes a list of <a href="com/sun/jdi/request/EventRequest.html" title="interface in com.sun.jdi.request"><code>EventRequest</code></a>s.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/StepRequest.html#depth--">depth()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/StepRequest.html" title="interface in com.sun.jdi.request">StepRequest</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/Connector.Argument.html#description--">description()</a></span> - Method in interface com.sun.jdi.connect.<a href="com/sun/jdi/connect/Connector.Argument.html" title="interface in com.sun.jdi.connect">Connector.Argument</a></dt>
+<dd>
+<div class="block">Returns a human-readable description of this argument
+ and its purpose.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/Connector.html#description--">description()</a></span> - Method in interface com.sun.jdi.connect.<a href="com/sun/jdi/connect/Connector.html" title="interface in com.sun.jdi.connect">Connector</a></dt>
+<dd>
+<div class="block">Returns a human-readable description of this connector
+ and its purpose.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/spi/TransportService.html#description--">description()</a></span> - Method in class com.sun.jdi.connect.spi.<a href="com/sun/jdi/connect/spi/TransportService.html" title="class in com.sun.jdi.connect.spi">TransportService</a></dt>
+<dd>
+<div class="block">Returns a description of the transport service.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachine.html#description--">description()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachine.html" title="interface in com.sun.jdi">VirtualMachine</a></dt>
+<dd>
+<div class="block">Returns text information on the target VM and the
+ debugger support that mirrors it.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequest.html#disable--">disable()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequest.html" title="interface in com.sun.jdi.request">EventRequest</a></dt>
+<dd>
+<div class="block">Same as <a href="com/sun/jdi/request/EventRequest.html#setEnabled-boolean-"><code><CODE>setEnabled(false)</CODE></code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ObjectReference.html#disableCollection--">disableCollection()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ObjectReference.html" title="interface in com.sun.jdi">ObjectReference</a></dt>
+<dd>
+<div class="block">Prevents garbage collection for this object.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachine.html#dispose--">dispose()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachine.html" title="interface in com.sun.jdi">VirtualMachine</a></dt>
+<dd>
+<div class="block">Invalidates this virtual machine mirror.</div>
+</dd>
+<dt><a href="com/sun/jdi/DoubleType.html" title="interface in com.sun.jdi"><span class="typeNameLink">DoubleType</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">The type of all primitive double values accessed in
+ the target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/DoubleValue.html" title="interface in com.sun.jdi"><span class="typeNameLink">DoubleValue</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Provides access to a primitive <code>double</code> value in
+ the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/PrimitiveValue.html#doubleValue--">doubleValue()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/PrimitiveValue.html" title="interface in com.sun.jdi">PrimitiveValue</a></dt>
+<dd>
+<div class="block">Converts this value to a DoubleValue and returns the result
+ as a double.</div>
+</dd>
+<dt><a href="com/sun/jdi/request/DuplicateRequestException.html" title="class in com.sun.jdi.request"><span class="typeNameLink">DuplicateRequestException</span></a> - Exception in <a href="com/sun/jdi/request/package-summary.html">com.sun.jdi.request</a></dt>
+<dd>
+<div class="block">Thrown to indicate a duplicate event request.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/DuplicateRequestException.html#DuplicateRequestException--">DuplicateRequestException()</a></span> - Constructor for exception com.sun.jdi.request.<a href="com/sun/jdi/request/DuplicateRequestException.html" title="class in com.sun.jdi.request">DuplicateRequestException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/DuplicateRequestException.html#DuplicateRequestException-java.lang.String-">DuplicateRequestException(String)</a></span> - Constructor for exception com.sun.jdi.request.<a href="com/sun/jdi/request/DuplicateRequestException.html" title="class in com.sun.jdi.request">DuplicateRequestException</a></dt>
+<dd>&nbsp;</dd>
+</dl>
+<a name="I:E">
+<!--   -->
+</a>
+<h2 class="title">E</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequest.html#enable--">enable()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequest.html" title="interface in com.sun.jdi.request">EventRequest</a></dt>
+<dd>
+<div class="block">Same as <a href="com/sun/jdi/request/EventRequest.html#setEnabled-boolean-"><code><CODE>setEnabled(true)</CODE></code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ObjectReference.html#enableCollection--">enableCollection()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ObjectReference.html" title="interface in com.sun.jdi">ObjectReference</a></dt>
+<dd>
+<div class="block">Permits garbage collection for this object.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ObjectReference.html#entryCount--">entryCount()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ObjectReference.html" title="interface in com.sun.jdi">ObjectReference</a></dt>
+<dd>
+<div class="block">Returns the number times this object's monitor has been
+ entered by the current owning thread.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/BooleanValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/BooleanValue.html" title="interface in com.sun.jdi">BooleanValue</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this BooleanValue for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ByteValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ByteValue.html" title="interface in com.sun.jdi">ByteValue</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this ByteValue for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/CharValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/CharValue.html" title="interface in com.sun.jdi">CharValue</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this CharValue for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/DoubleValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/DoubleValue.html" title="interface in com.sun.jdi">DoubleValue</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this DoubleValue for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/Field.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/Field.html" title="interface in com.sun.jdi">Field</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this field for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/FloatValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/FloatValue.html" title="interface in com.sun.jdi">FloatValue</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this FloatValue for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/IntegerValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/IntegerValue.html" title="interface in com.sun.jdi">IntegerValue</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this IntegerValue for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/LocalVariable.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/LocalVariable.html" title="interface in com.sun.jdi">LocalVariable</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this LocalVariable for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/Location.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/Location.html" title="interface in com.sun.jdi">Location</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this Location for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/LongValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/LongValue.html" title="interface in com.sun.jdi">LongValue</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this LongValue for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/Method.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/Method.html" title="interface in com.sun.jdi">Method</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this method for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ObjectReference.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ObjectReference.html" title="interface in com.sun.jdi">ObjectReference</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this ObjectReference for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this ReferenceType for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ShortValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ShortValue.html" title="interface in com.sun.jdi">ShortValue</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this ShortValue for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VoidValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VoidValue.html" title="interface in com.sun.jdi">VoidValue</a></dt>
+<dd>
+<div class="block">Compares the specified Object with this VoidValue for equality.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InternalException.html#errorCode--">errorCode()</a></span> - Method in exception com.sun.jdi.<a href="com/sun/jdi/InternalException.html" title="class in com.sun.jdi">InternalException</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/sun/jdi/event/Event.html" title="interface in com.sun.jdi.event"><span class="typeNameLink">Event</span></a> - Interface in <a href="com/sun/jdi/event/package-summary.html">com.sun.jdi.event</a></dt>
+<dd>
+<div class="block">An occurrence in a target VM that is of interest to a debugger.</div>
+</dd>
+<dt><a href="com/sun/jdi/event/EventIterator.html" title="interface in com.sun.jdi.event"><span class="typeNameLink">EventIterator</span></a> - Interface in <a href="com/sun/jdi/event/package-summary.html">com.sun.jdi.event</a></dt>
+<dd>
+<div class="block">EventIterators are unmodifiable.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/event/EventSet.html#eventIterator--">eventIterator()</a></span> - Method in interface com.sun.jdi.event.<a href="com/sun/jdi/event/EventSet.html" title="interface in com.sun.jdi.event">EventSet</a></dt>
+<dd>
+<div class="block">Return an iterator specific to <a href="com/sun/jdi/event/Event.html" title="interface in com.sun.jdi.event"><code>Event</code></a> objects.</div>
+</dd>
+<dt><a href="com/sun/jdi/event/EventQueue.html" title="interface in com.sun.jdi.event"><span class="typeNameLink">EventQueue</span></a> - Interface in <a href="com/sun/jdi/event/package-summary.html">com.sun.jdi.event</a></dt>
+<dd>
+<div class="block">Manager of incoming debugger events for a target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachine.html#eventQueue--">eventQueue()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachine.html" title="interface in com.sun.jdi">VirtualMachine</a></dt>
+<dd>
+<div class="block">Returns the event queue for this virtual machine.</div>
+</dd>
+<dt><a href="com/sun/jdi/request/EventRequest.html" title="interface in com.sun.jdi.request"><span class="typeNameLink">EventRequest</span></a> - Interface in <a href="com/sun/jdi/request/package-summary.html">com.sun.jdi.request</a></dt>
+<dd>
+<div class="block">Represents a request for notification of an event.</div>
+</dd>
+<dt><a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request"><span class="typeNameLink">EventRequestManager</span></a> - Interface in <a href="com/sun/jdi/request/package-summary.html">com.sun.jdi.request</a></dt>
+<dd>
+<div class="block">Manages the creation and deletion of <a href="com/sun/jdi/request/EventRequest.html" title="interface in com.sun.jdi.request"><code>EventRequest</code></a>s.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachine.html#eventRequestManager--">eventRequestManager()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachine.html" title="interface in com.sun.jdi">VirtualMachine</a></dt>
+<dd>
+<div class="block">Returns the event request manager for this virtual machine.</div>
+</dd>
+<dt><a href="com/sun/jdi/event/EventSet.html" title="interface in com.sun.jdi.event"><span class="typeNameLink">EventSet</span></a> - Interface in <a href="com/sun/jdi/event/package-summary.html">com.sun.jdi.event</a></dt>
+<dd>
+<div class="block">Several <a href="com/sun/jdi/event/Event.html" title="interface in com.sun.jdi.event"><code>Event</code></a> objects may be created at a given time by
+ the target <a href="com/sun/jdi/VirtualMachine.html" title="interface in com.sun.jdi"><code>VirtualMachine</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/event/ExceptionEvent.html#exception--">exception()</a></span> - Method in interface com.sun.jdi.event.<a href="com/sun/jdi/event/ExceptionEvent.html" title="interface in com.sun.jdi.event">ExceptionEvent</a></dt>
+<dd>
+<div class="block">Gets the thrown exception object.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InvocationException.html#exception--">exception()</a></span> - Method in exception com.sun.jdi.<a href="com/sun/jdi/InvocationException.html" title="class in com.sun.jdi">InvocationException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/ExceptionRequest.html#exception--">exception()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/ExceptionRequest.html" title="interface in com.sun.jdi.request">ExceptionRequest</a></dt>
+<dd>
+<div class="block">Returns exception type for which exception events are requested.</div>
+</dd>
+<dt><a href="com/sun/jdi/event/ExceptionEvent.html" title="interface in com.sun.jdi.event"><span class="typeNameLink">ExceptionEvent</span></a> - Interface in <a href="com/sun/jdi/event/package-summary.html">com.sun.jdi.event</a></dt>
+<dd>
+<div class="block">Notification of an exception in the target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/request/ExceptionRequest.html" title="interface in com.sun.jdi.request"><span class="typeNameLink">ExceptionRequest</span></a> - Interface in <a href="com/sun/jdi/request/package-summary.html">com.sun.jdi.request</a></dt>
+<dd>
+<div class="block">Request for notification when an exception occurs in the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequestManager.html#exceptionRequests--">exceptionRequests()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequestManager.html" title="interface in com.sun.jdi.request">EventRequestManager</a></dt>
+<dd>
+<div class="block">Return an unmodifiable list of the enabled and disabled exception requests.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachine.html#exit-int-">exit(int)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachine.html" title="interface in com.sun.jdi">VirtualMachine</a></dt>
+<dd>
+<div class="block">Causes the mirrored VM to terminate with the given error code.</div>
+</dd>
+</dl>
+<a name="I:F">
+<!--   -->
+</a>
+<h2 class="title">F</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#failedToInitialize--">failedToInitialize()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Determines if initialization failed for this class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/event/WatchpointEvent.html#field--">field()</a></span> - Method in interface com.sun.jdi.event.<a href="com/sun/jdi/event/WatchpointEvent.html" title="interface in com.sun.jdi.event">WatchpointEvent</a></dt>
+<dd>
+<div class="block">Returns the field that is about to be accessed/modified.</div>
+</dd>
+<dt><a href="com/sun/jdi/Field.html" title="interface in com.sun.jdi"><span class="typeNameLink">Field</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">A class or instance variable in the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/WatchpointRequest.html#field--">field()</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/WatchpointRequest.html" title="interface in com.sun.jdi.request">WatchpointRequest</a></dt>
+<dd>
+<div class="block">Gets the Field being watched by this WatchpointRequest.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#fieldByName-java.lang.String-">fieldByName(String)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Finds the visible <a href="com/sun/jdi/Field.html" title="interface in com.sun.jdi"><code>Field</code></a> with the given
+ non-ambiguous name.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#fields--">fields()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Returns a list containing each <a href="com/sun/jdi/Field.html" title="interface in com.sun.jdi"><code>Field</code></a> declared in this type.</div>
+</dd>
+<dt><a href="com/sun/jdi/FloatType.html" title="interface in com.sun.jdi"><span class="typeNameLink">FloatType</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">The type of all primitive float values accessed in
+ the target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/FloatValue.html" titl

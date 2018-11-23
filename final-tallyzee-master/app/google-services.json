@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "724127059386",
+    "firebase_url": "https://tallyfy-364a0.firebaseio.com",
+    "project_id": "tallyfy-364a0",
+    "storage_bucket": "tallyfy-364a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724127059386:android:ef072ee6f0adae10",
+        "android_client_info": {
+          "package_name": "com.aiminfocom.tallyfy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724127059386-eod91q0e2dcuuf97o6a25d155rul6ujg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-uziog1ir_nlBNsu9l_ALBpeX2OQTwuw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724127059386:android:82c0d455eb70626b",
+        "android_client_info": {
+          "package_name": "com.aiminfocom.tallyfycom.aiminfocom.tallyfy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724127059386-eod91q0e2dcuuf97o6a25d155rul6ujg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-uziog1ir_nlBNsu9l_ALBpeX2OQTwuw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

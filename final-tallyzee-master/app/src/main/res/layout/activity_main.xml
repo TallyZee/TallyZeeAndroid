@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clipChildren="false">
+
+        <RelativeLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/toolbar_contnr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#964178"
+                app:elevation="5dp">
+
+              <RelativeLayout
+                  android:background="#964178"
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp">
+
+                  <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                      android:textColor="@color/white"
+                      android:id="@+id/materialSpinner"
+                      android:layout_width="250dp"
+                      app:RevealEmptyText="Select Company"
+                      app:RevealViewBackgroundColor="#964178"
+                      app:DividerHeight="0.5dp"
+                      app:NoItemsFoundText="No Company Found"
+                      app:ItemsDivider="@color/gray"
+                      app:ShowBorders="true"
+                      app:SearchViewTextColor="#000"
+                      android:layout_marginStart="20dp"
+                      app:StartSearchTintColor="#fff"
+                      app:DoneSearchTintColor="#000"
+                      app:SearchViewBackgroundColor="#964178"
+                      android:gravity="center_horizontal"
+                      android:layout_height="match_parent" />
+
+                  <android.support.v7.widget.SearchView
+                      app:layout="@layout/search_layout_2"
+                      app:queryBackground="@color/background"
+                      app:queryHint="Search Company"
+                      app:searchIcon="@drawable/ic_search"
+                      app:searchHintIcon="@drawable/ic_search"
+                      android:id="@+id/ic_search2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginEnd="5dp"
+                      android:backgroundTint="@color/white"
+                      android:paddingEnd="10dp"
+                      android:visibility="invisible"
+                      android:src="@drawable/ic_search" />
+
+              </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="-1dp"
+                android:layout_below="@id/toolbar_contnr"
+                android:background="#99964178"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/lastSync"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+                <ProgressBar
+                    android:layout_marginStart="10dp"
+                    android:visibility="invisible"
+                    android:id="@+id/syncProgress"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/lastSync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/getData"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_sync" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="@dimen/dp_24"-->
+            <!--android:src="@drawable/ic_distance_to_travel_between_two_points" />-->
+
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar_contnr"
+                android:layout_marginBottom="@dimen/dp_42"
+                android:layout_marginTop="27dp">
+
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:layout_alignParentBottom="true">
+
+                <android.support.design.widget.BottomNavigationView
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fitsSystemWindows="true"
+                    app:itemTextColor="@drawable/menu_item_selector"
+                    app:itemIconTint="@drawable/menu_item_selector"
+                    app:itemIconSize="24dp"
+                    app:itemTextAppearanceActive="@style/NavigationViewOwnStyle"
+                    app:itemTextAppearanceInactive="@style/NavigationViewOwnStyle"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/bottom_navigation_menu" />
+                <ImageView
+                    android:id="@+id/logo"
+                    android:src="@drawable/ic_tallyzeelogo"
+                    android:layout_width="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/nothing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar_contnr"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/under_cons_logo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_cement_mixing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/under_cons_logo"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/avenirltstd_medium"
+                    android:text="We Are UnderConstruction!!!"
+                    android:textColor="#dbb84c"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <!--<com.mindorks.placeholderview.SwipePlaceHolderView-->
+            <!--android:id="@+id/cards_container"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

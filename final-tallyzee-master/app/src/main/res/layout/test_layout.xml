@@ -1,0 +1,93 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_18"
+        >
+
+        <RelativeLayout
+            android:layout_margin="@dimen/dp_18"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/shpping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:text="SHAPPING"/>
+
+
+<LinearLayout
+    android:id="@+id/s1"
+    android:layout_marginTop="@dimen/dp_22"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipped By:"
+        android:fontFamily="@font/avenirltstd_mediumoblique"
+        android:textSize="14sp"/>
+    <TextView
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenirltstd_mediumoblique"
+        android:text="AimInfocom"/>
+</LinearLayout>
+            <LinearLayout
+                android:id="@+id/s2"
+                android:layout_below="@id/s1"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/avenirltstd_mediumoblique"
+                    android:text="Shipped Document ON:"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/avenirltstd_mediumoblique"
+                    android:text="Spyder976"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/s3"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_below="@id/s2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Final Destination:"
+                    android:fontFamily="@font/avenirltstd_mediumoblique"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mazagoan Dock"
+                    android:fontFamily="@font/avenirltstd_mediumoblique"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+

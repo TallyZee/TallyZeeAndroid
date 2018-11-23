@@ -1,0 +1,38 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hexsa"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:background="@drawable/ic_hecta"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#0B5345"
+        android:id="@+id/relativeLayout3">
+        <ImageView
+            android:id="@+id/test"
+            android:layout_width="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_user"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/test"
+            android:textSize="12sp"
+            android:text="Profit and Loss"
+            android:layout_marginLeft="30dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</merge>

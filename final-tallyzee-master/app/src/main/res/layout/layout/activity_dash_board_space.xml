@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aimtally.aiminfocom.com.aimtally.ui.DashBoardSpace.DashBoardSpaceActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/hadder"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary">
+<ImageView
+    android:id="@+id/bo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@drawable/ic_arrow_back_white_24px"
+    android:layout_margin="@dimen/dp_12"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/avd_share"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginTop="@dimen/sp_12"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_16" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_rupee_indian"
+            android:layout_toStartOf="@id/amount"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_12"
+            android:layout_toLeftOf="@id/amount" />
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_30"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/avenirltstd_medium"
+            android:text="2500000.00"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/amount"
+            android:layout_toRightOf="@id/amount"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net"
+                android:textSize="@dimen/dp_22"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"/>
+            <ImageView
+                android:id="@+id/popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_drop_down_arrow"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_items"
+        android:layout_width="match_parent"
+        android:layout_below="@id/hadder"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_voucher"
+                android:layout_below="@id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

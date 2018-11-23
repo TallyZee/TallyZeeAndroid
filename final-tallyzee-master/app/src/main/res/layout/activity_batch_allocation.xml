@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    tools:context=".ui.VoucherItem.VoucherInfo">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#964178"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backpressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/ic_arrow_back_white_24px"
+                android:backgroundTint="@color/white"/>
+            <TextView
+                android:id="@+id/HadderText"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@id/bo"
+                android:layout_height="wrap_content"
+                android:text="Sales"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                />
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:src="@drawable/avd_share" />
+            <ImageView
+                android:id="@+id/calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/share"
+                android:layout_marginEnd="@dimen/dp_24"
+
+                android:src="@drawable/ic_icons8_calendar"
+                android:backgroundTint="@color/white"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/hadder"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#E6D1DF">
+
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:fontFamily="@font/avenirltstd_medium"
+            android:text="Aim InfoCom"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/batch_Name"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="#ref:12345"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/avenirltstd_medium"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_below="@id/company_name"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/bill_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#ref:12345"
+
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/avenirltstd_medium"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_below="@id/batch_Name"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/acty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#ref:12345"
+            android:layout_toEndOf="@id/bill_qty"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/avenirltstd_medium"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_below="@id/batch_Name"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

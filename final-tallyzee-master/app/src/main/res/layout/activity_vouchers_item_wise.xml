@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.VoucherItemWise.VouchersItemWise">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#964178"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/bo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/ic_arrow_back_white_24px"
+                android:backgroundTint="@color/white"/>
+            <TextView
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/HadderText"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/bo"
+                android:layout_alignEnd="@+id/calender"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/calender"
+                android:text="Sales"
+                android:paddingEnd="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/avd_share" />
+            <ImageView
+                android:id="@+id/calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/share"
+                android:paddingRight="5dp"
+
+                android:src="@drawable/ic_icons8_calendar"
+                android:backgroundTint="@color/white"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/hadder"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#E6D1Df">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_12"
+            android:layout_toLeftOf="@id/amount"
+            android:layout_toStartOf="@id/amount"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_rupee_indian" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/avenirltstd_medium"
+            android:text="2500000.00"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dp_30" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/prieod"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:text="As Of 15 Dec 2018"/>
+            <TextView
+                android:layout_toEndOf="@id/prieod"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="| All"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hadder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="48dp"-->
+
+                    <!--android:orientation="horizontal">-->
+                    <!--<RelativeLayout-->
+                        <!--android:background="#7e7e7e"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_margin="1dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Net"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:layout_marginStart="@dimen/dp_8"-->
+                            <!--android:layout_weight="1"/>-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/netAmount"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="16sp"-->
+                            <!--android:text="12500.00"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--/>-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="12.5dp"-->
+                            <!--android:layout_height="12.5dp"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:tint="@color/black"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_toStartOf="@id/netAmount"-->
+                            <!--android:src="@drawable/ic_rupee_indian"/>-->
+                    <!--</RelativeLayout> <RelativeLayout-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_margin="1dp"-->
+                    <!--android:background="#7e7e7e"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginStart="@dimen/dp_8"-->
+                        <!--android:text="Gross"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:layout_weight="1"/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/grossAmount"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="14500.00"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--/>-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="12.5dp"-->
+                        <!--android:layout_height="12.5dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:tint="@color/black"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_toStartOf="@id/grossAmount"-->
+                        <!--android:src="@drawable/ic_rupee_indian"/>    </RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="#F2F1F1"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:id="@+id/amountSales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:text="12500.00"
+                            android:textSize="12sp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="@dimen/dp_8"
+                            />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_below="@id/amountSales"
+                            android:text="Sales"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            />
+                    </RelativeLayout> <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:background="#F2F1F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/amountValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:text="33500.00"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+
+                        android:layout_below="@id/amountValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:layout_centerHorizontal="true"
+                        android:text="RETURN SALES"
+                        />
+                </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/chart"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/imagePalet"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/multiline"-->
+                        <!--android:layout_width="@dimen/dp_24"-->
+                        <!--android:layout_height="@dimen/dp_24"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_marginStart="15dp"-->
+                        <!--android:src="@drawable/ic_baseline_multiline_chart_24px"/>-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/bar"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginStart="15dp"-->
+                        <!--android:layout_toLeftOf="@id/multiline"-->
+                        <!--android:src="@drawable/ic_baseline_bar_chart_24px"/>-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/pie"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toLeftOf="@id/bar"-->
+                        <!--android:layout_marginStart="15dp"-->
+                        <!--android:src="@drawable/ic_baseline_pie_chart_24px"-->
+                        <!--/>-->
+
+                <!--</RelativeLayout>-->
+                <!--<FrameLayout-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<com.github.mikephil.charting.charts.BarChart-->
+                        <!--android:id="@+id/barChart"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="250dp" />-->
+                    <!--&lt;!&ndash;<com.github.mikephil.charting.charts.PieChart&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/pieChart"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="250dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+                    <!--&lt;!&ndash;&gt;</com.github.mikephil.charting.charts.PieChart>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<com.github.mikephil.charting.charts.LineChart&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/lineChart"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="250dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:visibility="gone"></com.github.mikephil.charting.charts.LineChart>&ndash;&gt;-->
+                <!--</FrameLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_voucher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

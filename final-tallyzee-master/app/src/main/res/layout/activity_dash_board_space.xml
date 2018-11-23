@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/toolbar_contnr"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#964178"
+            app:elevation="5dp">
+
+            <android.support.v7.widget.Toolbar
+
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#964178">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/bo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/white"
+                        app:srcCompat="@drawable/ic_arrow_back_white_24px" />
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/HadderText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/bo"
+                        android:layout_toRightOf="@+id/bo"
+                        android:text="Sales"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="10dp"
+                        android:src="@drawable/avd_share" />
+
+                    <ImageView
+                        android:id="@+id/calender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/share"
+                        android:backgroundTint="@color/white"
+                        android:paddingEnd="10dp"
+                        android:src="@drawable/ic_icons8_calendar" />
+
+                    <android.support.v7.widget.SearchView
+                        app:layout="@layout/search_layout"
+                        app:queryBackground="@color/background"
+                        app:queryHint="Search Company"
+                        app:searchIcon="@drawable/ic_search"
+                        app:searchHintIcon="@drawable/ic_search"
+                        android:id="@+id/ic_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/calender"
+                        android:backgroundTint="@color/white"
+                        android:paddingEnd="10dp"
+                        android:visibility="visible"
+                        android:src="@drawable/ic_search" />
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/hadder"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="60dp"
+            android:background="#edd0f1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp_12"
+                android:layout_toLeftOf="@id/amount"
+                android:layout_toStartOf="@id/amount"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_rupee_indian" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:text="2500000.00"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dp_30" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amount"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/prieod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="As Of 15 Dec 2018"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_toEndOf="@id/prieod"
+                    android:text="| All"
+                    android:textColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="160dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/oneRe"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rel"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/netAmount"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/avenirltstd_medium"
+                        android:gravity="center"
+                        android:text="Net" />
+
+                    <ImageView
+                        android:layout_width="12.5dp"
+                        android:layout_height="12.5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/netAmount"
+                        android:src="@drawable/ic_rupee_indian"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/netAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="12500.00"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/rel"
+                    android:background="#B4A8E5" />
+
+                <RelativeLayout
+                    android:layout_toEndOf="@+id/view"
+                    android:layout_width="180sp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/grossAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirltstd_medium"
+                        android:text="Gross" />
+
+                    <ImageView
+
+                        android:layout_width="12.5dp"
+                        android:layout_height="12.5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/grossAmount"
+                        android:src="@drawable/ic_rupee_indian"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:id="@+id/grossAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="14500.00"
+                        android:textColor="@color/colorPrimary" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_marginTop="80dp"
+                android:background="#B4A8E5"
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/oneRe">
+
+                <RelativeLayout
+                    android:id="@+id/ree1"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp">
+                    <ImageView
+                        android:layout_width="12.5dp"
+                        android:layout_height="12.5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/amountSales"
+                        android:src="@drawable/ic_rupee_indian"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/amountSales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="12500.00"
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <TextView
+                        android:layout_below="@+id/amountSales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Sales"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/ree1"
+                    android:background="#B4A8E5" />
+
+                <RelativeLayout
+                    android:layout_width="180sp"
+                    android:layout_height="60sp"
+                    android:layout_toEndOf="@+id/view2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/amountValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirltstd_medium"
+                        android:text="Return Sales" />
+
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:id="@+id/amountValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="14500.00"
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <ImageView
+
+                        android:layout_toStartOf="@+id/amountValue"
+                        android:layout_width="12.5dp"
+                        android:layout_height="12.5dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_rupee_indian"
+                        android:tint="@color/colorPrimary" />
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/parent"
+            android:background="#B4A8E5" />
+
+
+        <RelativeLayout
+            android:layout_below="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/grph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/app_bar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:expandedTitleGravity="top"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+
+
+                        <FrameLayout
+                            android:id="@+id/myFrameLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+
+                        </FrameLayout>
+                        </android.support.v4.view.ViewPager>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                            android:id="@+id/spring_dots_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:dampingRatio="0.5"
+                            app:dotsColor="@color/white"
+                            app:dotsStrokeColor="@color/colorPrimary"
+                            app:dotsCornerRadius="10dp"
+                            app:dotsSize="12dp"
+                            android:layout_marginTop="180dp"
+                            android:layout_centerHorizontal="true"
+                            app:dotsSpacing="4dp"
+                            app:dotsStrokeWidth="2dp"
+                            app:stiffness="300"
+                            />
+                </RelativeLayout>
+                        <!--<com.github.mikephil.charting.charts.PieChart-->
+                        <!--android:id="@+id/pieChart"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="250dp"-->
+                        <!--android:visibility="gone"-->
+                        <!--&gt;</com.github.mikephil.charting.charts.PieChart>-->
+                        <!--<com.github.mikephil.charting.charts.LineChart-->
+                        <!--android:id="@+id/lineChart"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="250dp"-->
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/toolbar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="10sp"
+                            android:background="#fff"
+                            app:layout_collapseMode="pin"
+                            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+                        <!--android:visibility="gone"></com.github.mikephil.charting.charts.LineChart>-->
+                    </android.support.design.widget.CollapsingToolbarLayout>
+
+                </android.support.design.widget.AppBarLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:scrollbars="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:id="@+id/list_voucher"
+                    android:layout_below="@id/app_bar_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="pin">
+                </android.support.v7.widget.RecyclerView>
+                <ProgressBar
+                    android:id="@+id/myProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/conain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar_contnr"
+            android:layout_marginBottom="@dimen/dp_42"
+            android:layout_marginTop="27dp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:itemIconSize="24sp"
+            android:fitsSystemWindows="true"
+            app:itemIconTint="@drawable/menu_item_selector"
+            app:itemTextAppearanceActive="@style/NavigationViewOwnStyle"
+            app:itemTextAppearanceInactive="@style/NavigationViewOwnStyle"
+            app:itemTextColor="@drawable/menu_item_selector"
+            app:labelVisibilityMode="labeled"
+            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+            app:menu="@menu/bottom_navigation_menu" />
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/ic_tallyzeelogo"
+            android:layout_width="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+</RelativeLayout>

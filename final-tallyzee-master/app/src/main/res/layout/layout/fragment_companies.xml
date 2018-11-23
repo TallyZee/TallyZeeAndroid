@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/app_bar_height"
+        android:background="#EBE6EB"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/nav_back_btn"
+            style="@style/Button.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@color/transparent"
+            android:tint="@color/black"
+            app:srcCompat="@drawable/ic_keyboard_backspace_24px" />
+
+
+        <TextView
+            android:id="@+id/hadder_text"
+            style="@style/TextStyle.Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/nav_back_btn"
+            android:layout_toRightOf="@id/nav_back_btn"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/compaines"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/search_text"
+            style="@style/TextStyle.Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/nav_back_btn"
+            android:layout_toRightOf="@id/nav_back_btn"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:hint="Enter company Name"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:srcCompat="@drawable/ic_search"
+            android:layout_marginEnd="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/companies_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

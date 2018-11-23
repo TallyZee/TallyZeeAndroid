@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/item"
+    android:layout_margin="@dimen/dp_8"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/avenirltstd_medium"
+        android:text="IPhone X"/>
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_below="@id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Qty:4 nos"
+        />
+    <TextView
+        android:id="@+id/productID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:text="HSB/SACHSN876"/>
+    <TextView
+        android:id="@+id/cgst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productID"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimary"
+        android:text="CGST:0%"/>
+    <TextView
+        android:id="@+id/sgst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SGST:0%"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/dp_12"
+        android:layout_below="@id/cgst"/>
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="@dimen/dp_8"
+       android:layout_alignParentEnd="true">
+
+       <ImageView
+           android:id="@+id/currc"
+           android:layout_width="13dp"
+           android:layout_height="13dp"
+           android:layout_centerVertical="true"
+           android:src="@drawable/ic_rupee_indian"
+           android:tint="@color/colorPrimary"/>
+       <TextView
+           android:id="@+id/amount"
+           android:text="125000"
+           android:layout_toEndOf="@id/currc"
+           android:layout_width="wrap_content"
+           android:layout_marginStart="@dimen/dp_4"
+           android:textColor="@color/colorPrimary"
+           android:layout_height="wrap_content" />
+   </RelativeLayout>
+<View
+    android:layout_below="@id/sgst"
+    android:layout_margin="@dimen/dp_4"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#F2F1F1"/>
+
+
+</RelativeLayout>

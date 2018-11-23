@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#964178"
+    >
+    <LinearLayout
+        android:id="@+id/li"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_arrow_back_white_24px"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:src="@drawable/tallyzee_logo"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/li"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/et_name"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="start"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:textColor="#fff"
+                    android:textColorHint="#40ffffff"
+                    android:textSize="14sp" />
+                <android.support.design.widget.TextInputEditText
+                    android:layout_toEndOf="@+id/et_name"
+                    android:id="@+id/et_last_name"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="-20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:textColor="#fff"
+                    android:textColorHint="#40ffffff"
+                    android:textSize="14sp" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_below="@+id/et_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="+91 | Contact Number"
+                    android:inputType="number"
+                    android:textColor="#fff"
+                    android:textColorHint="#40ffffff"
+                    android:textSize="14sp" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/et_mobile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#fff"
+                    android:textColorHint="#40ffffff"
+                    android:textSize="14sp" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_below="@+id/et_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#fff"
+                    android:textColorHint="#40ffffff"
+                    android:textSize="14sp" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_cnf_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_below="@id/et_password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textColor="#fff"
+                    android:textColorHint="#40ffffff"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/byClick"
+                    android:layout_below="@id/et_cnf_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="By clicking sign up you are agreeing to the"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/terms"
+                    android:layout_below="@id/byClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="Terms and Conditions"
+                    android:textColor="#7B87F8"
+                    android:textSize="12sp" />
+                <Button
+                    android:layout_below="@+id/terms"
+                    android:id="@+id/singup_button"
+                    android:layout_width="187dp"
+                    android:layout_height="38dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_button"
+                    android:text="Sign Up"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+

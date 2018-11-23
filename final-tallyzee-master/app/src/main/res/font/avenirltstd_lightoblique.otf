@@ -1,0 +1,333 @@
+eEarlyReturn-com.sun.jdi.Value-">forceEarlyReturn(Value)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ThreadReference.html" title="interface in com.sun.jdi">ThreadReference</a></dt>
+<dd>
+<div class="block">Force a method to return before it reaches a return
+ statement.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ThreadReference.html#frame-int-">frame(int)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ThreadReference.html" title="interface in com.sun.jdi">ThreadReference</a></dt>
+<dd>
+<div class="block">Returns the <a href="com/sun/jdi/StackFrame.html" title="interface in com.sun.jdi"><code>StackFrame</code></a> at the given index in the
+ thread's current call stack.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ThreadReference.html#frameCount--">frameCount()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ThreadReference.html" title="interface in com.sun.jdi">ThreadReference</a></dt>
+<dd>
+<div class="block">Returns the number of stack frames in the thread's current
+ call stack.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ThreadReference.html#frames--">frames()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ThreadReference.html" title="interface in com.sun.jdi">ThreadReference</a></dt>
+<dd>
+<div class="block">Returns a List containing each <a href="com/sun/jdi/StackFrame.html" title="interface in com.sun.jdi"><code>StackFrame</code></a> in the
+ thread's current call stack.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ThreadReference.html#frames-int-int-">frames(int, int)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ThreadReference.html" title="interface in com.sun.jdi">ThreadReference</a></dt>
+<dd>
+<div class="block">Returns a List containing a range of <a href="com/sun/jdi/StackFrame.html" title="interface in com.sun.jdi"><code>StackFrame</code></a> mirrors
+ from the thread's current call stack.</div>
+</dd>
+</dl>
+<a name="I:G">
+<!--   -->
+</a>
+<h2 class="title">G</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/LocalVariable.html#genericSignature--">genericSignature()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/LocalVariable.html" title="interface in com.sun.jdi">LocalVariable</a></dt>
+<dd>
+<div class="block">Gets the generic signature for this variable if there is one.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#genericSignature--">genericSignature()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Gets the generic signature for this type if there is one.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/TypeComponent.html#genericSignature--">genericSignature()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/TypeComponent.html" title="interface in com.sun.jdi">TypeComponent</a></dt>
+<dd>
+<div class="block">Gets the generic signature for this TypeComponent if there is one.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/StackFrame.html#getArgumentValues--">getArgumentValues()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/StackFrame.html" title="interface in com.sun.jdi">StackFrame</a></dt>
+<dd>
+<div class="block">Returns the values of all arguments in this frame.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachine.html#getDefaultStratum--">getDefaultStratum()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachine.html" title="interface in com.sun.jdi">VirtualMachine</a></dt>
+<dd>
+<div class="block">Return this VM's default stratum.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/EventRequest.html#getProperty-java.lang.Object-">getProperty(Object)</a></span> - Method in interface com.sun.jdi.request.<a href="com/sun/jdi/request/EventRequest.html" title="interface in com.sun.jdi.request">EventRequest</a></dt>
+<dd>
+<div class="block">Returns the value of the property with the specified key.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ArrayReference.html#getValue-int-">getValue(int)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ArrayReference.html" title="interface in com.sun.jdi">ArrayReference</a></dt>
+<dd>
+<div class="block">Returns an array component value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ObjectReference.html#getValue-com.sun.jdi.Field-">getValue(Field)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ObjectReference.html" title="interface in com.sun.jdi">ObjectReference</a></dt>
+<dd>
+<div class="block">Gets the value of a given instance or static field in this object.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#getValue-com.sun.jdi.Field-">getValue(Field)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Gets the <a href="com/sun/jdi/Value.html" title="interface in com.sun.jdi"><code>Value</code></a> of a given static <a href="com/sun/jdi/Field.html" title="interface in com.sun.jdi"><code>Field</code></a> in this type.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/StackFrame.html#getValue-com.sun.jdi.LocalVariable-">getValue(LocalVariable)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/StackFrame.html" title="interface in com.sun.jdi">StackFrame</a></dt>
+<dd>
+<div class="block">Gets the <a href="com/sun/jdi/Value.html" title="interface in com.sun.jdi"><code>Value</code></a> of a <a href="com/sun/jdi/LocalVariable.html" title="interface in com.sun.jdi"><code>LocalVariable</code></a> in this frame.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ArrayReference.html#getValues--">getValues()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ArrayReference.html" title="interface in com.sun.jdi">ArrayReference</a></dt>
+<dd>
+<div class="block">Returns all of the components in this array.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ArrayReference.html#getValues-int-int-">getValues(int, int)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ArrayReference.html" title="interface in com.sun.jdi">ArrayReference</a></dt>
+<dd>
+<div class="block">Returns a range of array components.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ObjectReference.html#getValues-java.util.List-">getValues(List&lt;? extends Field&gt;)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ObjectReference.html" title="interface in com.sun.jdi">ObjectReference</a></dt>
+<dd>
+<div class="block">Gets the value of multiple instance and/or static fields in this object.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#getValues-java.util.List-">getValues(List&lt;? extends Field&gt;)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Returns a map containing the <a href="com/sun/jdi/Value.html" title="interface in com.sun.jdi"><code>Value</code></a> of each
+ static <a href="com/sun/jdi/Field.html" title="interface in com.sun.jdi"><code>Field</code></a> in the given list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/StackFrame.html#getValues-java.util.List-">getValues(List&lt;? extends LocalVariable&gt;)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/StackFrame.html" title="interface in com.sun.jdi">StackFrame</a></dt>
+<dd>
+<div class="block">Returns the values of multiple local variables in this frame.</div>
+</dd>
+</dl>
+<a name="I:H">
+<!--   -->
+</a>
+<h2 class="title">H</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/BooleanValue.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/BooleanValue.html" title="interface in com.sun.jdi">BooleanValue</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this BooleanValue.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ByteValue.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ByteValue.html" title="interface in com.sun.jdi">ByteValue</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this BooleanValue.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/CharValue.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/CharValue.html" title="interface in com.sun.jdi">CharValue</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this CharValue.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/DoubleValue.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/DoubleValue.html" title="interface in com.sun.jdi">DoubleValue</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this DoubleValue.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/Field.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/Field.html" title="interface in com.sun.jdi">Field</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this Field.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/FloatValue.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/FloatValue.html" title="interface in com.sun.jdi">FloatValue</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this FloatValue.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/IntegerValue.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/IntegerValue.html" title="interface in com.sun.jdi">IntegerValue</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this IntegerValue.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/LocalVariable.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/LocalVariable.html" title="interface in com.sun.jdi">LocalVariable</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this LocalVariable.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/Location.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/Location.html" title="interface in com.sun.jdi">Location</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this Location.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/LongValue.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/LongValue.html" title="interface in com.sun.jdi">LongValue</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this LongValue.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/Method.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/Method.html" title="interface in com.sun.jdi">Method</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this Method.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ObjectReference.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ObjectReference.html" title="interface in com.sun.jdi">ObjectReference</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this ObjectReference.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this ObjectReference.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ShortValue.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ShortValue.html" title="interface in com.sun.jdi">ShortValue</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this ShortValue.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VoidValue.html#hashCode--">hashCode()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VoidValue.html" title="interface in com.sun.jdi">VoidValue</a></dt>
+<dd>
+<div class="block">Returns the hash code value for this VoidValue.</div>
+</dd>
+</dl>
+<a name="I:I">
+<!--   -->
+</a>
+<h2 class="title">I</h2>
+<dl>
+<dt><a href="com/sun/jdi/connect/IllegalConnectorArgumentsException.html" title="class in com.sun.jdi.connect"><span class="typeNameLink">IllegalConnectorArgumentsException</span></a> - Exception in <a href="com/sun/jdi/connect/package-summary.html">com.sun.jdi.connect</a></dt>
+<dd>
+<div class="block">Thrown to indicate an invalid argument or
+ inconsistent passed to a <a href="com/sun/jdi/connect/Connector.html" title="interface in com.sun.jdi.connect"><code>Connector</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/IllegalConnectorArgumentsException.html#IllegalConnectorArgumentsException-java.lang.String-java.lang.String-">IllegalConnectorArgumentsException(String, String)</a></span> - Constructor for exception com.sun.jdi.connect.<a href="com/sun/jdi/connect/IllegalConnectorArgumentsException.html" title="class in com.sun.jdi.connect">IllegalConnectorArgumentsException</a></dt>
+<dd>
+<div class="block">Construct an <code>IllegalConnectorArgumentsException</code>
+ with the specified detail message and the name of the argument
+ which is invalid or inconsistent.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/IllegalConnectorArgumentsException.html#IllegalConnectorArgumentsException-java.lang.String-java.util.List-">IllegalConnectorArgumentsException(String, List&lt;String&gt;)</a></span> - Constructor for exception com.sun.jdi.connect.<a href="com/sun/jdi/connect/IllegalConnectorArgumentsException.html" title="class in com.sun.jdi.connect">IllegalConnectorArgumentsException</a></dt>
+<dd>
+<div class="block">Construct an <code>IllegalConnectorArgumentsException</code>
+ with the specified detail message and a <code>List</code> of
+ names of arguments which are invalid or inconsistent.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InterfaceType.html#implementors--">implementors()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/InterfaceType.html" title="interface in com.sun.jdi">InterfaceType</a></dt>
+<dd>
+<div class="block">Gets the currently prepared classes which directly implement this
+ interface.</div>
+</dd>
+<dt><a href="com/sun/jdi/IncompatibleThreadStateException.html" title="class in com.sun.jdi"><span class="typeNameLink">IncompatibleThreadStateException</span></a> - Exception in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Thrown to indicate that the requested operation cannot be
+ completed while the specified thread is in its current state.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/IncompatibleThreadStateException.html#IncompatibleThreadStateException--">IncompatibleThreadStateException()</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/IncompatibleThreadStateException.html" title="class in com.sun.jdi">IncompatibleThreadStateException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/IncompatibleThreadStateException.html#IncompatibleThreadStateException-java.lang.String-">IncompatibleThreadStateException(String)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/IncompatibleThreadStateException.html" title="class in com.sun.jdi">IncompatibleThreadStateException</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/sun/jdi/InconsistentDebugInfoException.html" title="class in com.sun.jdi"><span class="typeNameLink">InconsistentDebugInfoException</span></a> - Exception in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Thrown to indicate that there is an inconistency in the debug
+ information provided by the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InconsistentDebugInfoException.html#InconsistentDebugInfoException--">InconsistentDebugInfoException()</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InconsistentDebugInfoException.html" title="class in com.sun.jdi">InconsistentDebugInfoException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InconsistentDebugInfoException.html#InconsistentDebugInfoException-java.lang.String-">InconsistentDebugInfoException(String)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InconsistentDebugInfoException.html" title="class in com.sun.jdi">InconsistentDebugInfoException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/VirtualMachine.html#instanceCounts-java.util.List-">instanceCounts(List&lt;? extends ReferenceType&gt;)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/VirtualMachine.html" title="interface in com.sun.jdi">VirtualMachine</a></dt>
+<dd>
+<div class="block">Returns the number of instances of each ReferenceType in the 'refTypes'
+ list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ReferenceType.html#instances-long-">instances(long)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ReferenceType.html" title="interface in com.sun.jdi">ReferenceType</a></dt>
+<dd>
+<div class="block">Returns instances of this ReferenceType.</div>
+</dd>
+<dt><a href="com/sun/jdi/IntegerType.html" title="interface in com.sun.jdi"><span class="typeNameLink">IntegerType</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">The type of all primitive <code>int</code> values
+ accessed in the target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/IntegerValue.html" title="interface in com.sun.jdi"><span class="typeNameLink">IntegerValue</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Provides access to a primitive <code>int</code> value in
+ the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ClassType.html#interfaces--">interfaces()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ClassType.html" title="interface in com.sun.jdi">ClassType</a></dt>
+<dd>
+<div class="block">Gets the interfaces directly implemented by this class.</div>
+</dd>
+<dt><a href="com/sun/jdi/InterfaceType.html" title="interface in com.sun.jdi"><span class="typeNameLink">InterfaceType</span></a> - Interface in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">A mirror of an interface in the target VM.</div>
+</dd>
+<dt><a href="com/sun/jdi/InternalException.html" title="class in com.sun.jdi"><span class="typeNameLink">InternalException</span></a> - Exception in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Thrown to indicate that an unexpected internal error has
+ occurred.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InternalException.html#InternalException--">InternalException()</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InternalException.html" title="class in com.sun.jdi">InternalException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InternalException.html#InternalException-java.lang.String-">InternalException(String)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InternalException.html" title="class in com.sun.jdi">InternalException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InternalException.html#InternalException-int-">InternalException(int)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InternalException.html" title="class in com.sun.jdi">InternalException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InternalException.html#InternalException-java.lang.String-int-">InternalException(String, int)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InternalException.html" title="class in com.sun.jdi">InternalException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ThreadReference.html#interrupt--">interrupt()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ThreadReference.html" title="interface in com.sun.jdi">ThreadReference</a></dt>
+<dd>
+<div class="block">Interrupts this thread unless the thread has been suspended by the
+ debugger.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/connect/Connector.IntegerArgument.html#intValue--">intValue()</a></span> - Method in interface com.sun.jdi.connect.<a href="com/sun/jdi/connect/Connector.IntegerArgument.html" title="interface in com.sun.jdi.connect">Connector.IntegerArgument</a></dt>
+<dd>
+<div class="block">Return the value of the argument as a int.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/PrimitiveValue.html#intValue--">intValue()</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/PrimitiveValue.html" title="interface in com.sun.jdi">PrimitiveValue</a></dt>
+<dd>
+<div class="block">Converts this value to an IntegerValue and returns the result
+ as an int.</div>
+</dd>
+<dt><a href="com/sun/jdi/InvalidCodeIndexException.html" title="class in com.sun.jdi"><span class="typeNameLink">InvalidCodeIndexException</span></a> - Exception in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">This exception is no longer thrown</span></div>
+</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InvalidCodeIndexException.html#InvalidCodeIndexException--">InvalidCodeIndexException()</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InvalidCodeIndexException.html" title="class in com.sun.jdi">InvalidCodeIndexException</a></dt>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InvalidCodeIndexException.html#InvalidCodeIndexException-java.lang.String-">InvalidCodeIndexException(String)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InvalidCodeIndexException.html" title="class in com.sun.jdi">InvalidCodeIndexException</a></dt>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
+<dt><a href="com/sun/jdi/InvalidLineNumberException.html" title="class in com.sun.jdi"><span class="typeNameLink">InvalidLineNumberException</span></a> - Exception in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">This exception is no longer thrown</span></div>
+</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InvalidLineNumberException.html#InvalidLineNumberException--">InvalidLineNumberException()</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InvalidLineNumberException.html" title="class in com.sun.jdi">InvalidLineNumberException</a></dt>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InvalidLineNumberException.html#InvalidLineNumberException-java.lang.String-">InvalidLineNumberException(String)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InvalidLineNumberException.html" title="class in com.sun.jdi">InvalidLineNumberException</a></dt>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
+<dt><a href="com/sun/jdi/request/InvalidRequestStateException.html" title="class in com.sun.jdi.request"><span class="typeNameLink">InvalidRequestStateException</span></a> - Exception in <a href="com/sun/jdi/request/package-summary.html">com.sun.jdi.request</a></dt>
+<dd>
+<div class="block">Thrown to indicate that the requested event cannot be modified
+ because it is enabled.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/InvalidRequestStateException.html#InvalidRequestStateException--">InvalidRequestStateException()</a></span> - Constructor for exception com.sun.jdi.request.<a href="com/sun/jdi/request/InvalidRequestStateException.html" title="class in com.sun.jdi.request">InvalidRequestStateException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/request/InvalidRequestStateException.html#InvalidRequestStateException-java.lang.String-">InvalidRequestStateException(String)</a></span> - Constructor for exception com.sun.jdi.request.<a href="com/sun/jdi/request/InvalidRequestStateException.html" title="class in com.sun.jdi.request">InvalidRequestStateException</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/sun/jdi/InvalidStackFrameException.html" title="class in com.sun.jdi"><span class="typeNameLink">InvalidStackFrameException</span></a> - Exception in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Thrown to indicate that the requested operation cannot be
+ completed because the specified stack frame is no longer valid.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InvalidStackFrameException.html#InvalidStackFrameException--">InvalidStackFrameException()</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InvalidStackFrameException.html" title="class in com.sun.jdi">InvalidStackFrameException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InvalidStackFrameException.html#InvalidStackFrameException-java.lang.String-">InvalidStackFrameException(String)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InvalidStackFrameException.html" title="class in com.sun.jdi">InvalidStackFrameException</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/sun/jdi/InvalidTypeException.html" title="class in com.sun.jdi"><span class="typeNameLink">InvalidTypeException</span></a> - Exception in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Thrown to indicate a type mismatch in setting the value of a field
+ or variable, or in specifying the return value of a method.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InvalidTypeException.html#InvalidTypeException--">InvalidTypeException()</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InvalidTypeException.html" title="class in com.sun.jdi">InvalidTypeException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InvalidTypeException.html#InvalidTypeException-java.lang.String-">InvalidTypeException(String)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InvalidTypeException.html" title="class in com.sun.jdi">InvalidTypeException</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/sun/jdi/InvocationException.html" title="class in com.sun.jdi"><span class="typeNameLink">InvocationException</span></a> - Exception in <a href="com/sun/jdi/package-summary.html">com.sun.jdi</a></dt>
+<dd>
+<div class="block">Thrown to indicate an exception occurred in an invoked method within
+ the target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/InvocationException.html#InvocationException-com.sun.jdi.ObjectReference-">InvocationException(ObjectReference)</a></span> - Constructor for exception com.sun.jdi.<a href="com/sun/jdi/InvocationException.html" title="class in com.sun.jdi">InvocationException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ObjectReference.html#INVOKE_NONVIRTUAL">INVOKE_NONVIRTUAL</a></span> - Static variable in interface com.sun.jdi.<a href="com/sun/jdi/ObjectReference.html" title="interface in com.sun.jdi">ObjectReference</a></dt>
+<dd>
+<div class="block">Perform non-virtual method invocation</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ClassType.html#INVOKE_SINGLE_THREADED">INVOKE_SINGLE_THREADED</a></span> - Static variable in interface com.sun.jdi.<a href="com/sun/jdi/ClassType.html" title="interface in com.sun.jdi">ClassType</a></dt>
+<dd>
+<div class="block">Perform method invocation with only the invoking thread resumed</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ObjectReference.html#INVOKE_SINGLE_THREADED">INVOKE_SINGLE_THREADED</a></span> - Static variable in interface com.sun.jdi.<a href="com/sun/jdi/ObjectReference.html" title="interface in com.sun.jdi">ObjectReference</a></dt>
+<dd>
+<div class="block">Perform method invocation with only the invoking thread resumed</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/sun/jdi/ClassType.html#invokeMethod-com.sun.jdi.ThreadReference-com.sun.jdi.Method-java.util.List-int-">invokeMethod(ThreadReference, Method, List&lt;? extends Value&gt;, int)</a></span> - Method in interface com.sun.jdi.<a href="com/sun/jdi/ClassType.html" title="interfa

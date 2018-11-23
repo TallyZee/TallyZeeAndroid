@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    tools:context=".ui.ClientDetails.ClientDetails">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:orientation="horizontal"
+        android:background="#964178"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/bo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_white_24px"
+                android:backgroundTint="@color/white"/>
+            <TextView
+                android:layout_toStartOf="@+id/calender"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/HadderText"
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@id/bo"
+                android:layout_height="wrap_content"
+                android:text="Sales"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:src="@drawable/ic_info_24px" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/profile"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:src="@drawable/ic_icons8_calendar"
+                android:backgroundTint="@color/white"/>
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/hadder"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#E6d1df"
+        android:elevation="@dimen/dp_8">
+
+        <TextView
+            android:id="@+id/period_view"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/avenirltstd_medium"
+            android:text="1 Mar 2018 to 1 Aug 2018"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+
+        <android.support.design.widget.TabLayout
+
+            android:id="@+id/tab_layout"
+            android:layout_alignParentBottom="true"
+            style="@style/MyCustomTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80964178"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+
+        android:layout_below="@id/hadder"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+<FrameLayout
+    android:id="@+id/contanier"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_4"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/hadder"></FrameLayout>
+</RelativeLayout>

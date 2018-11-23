@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.Rating.RatingFragment">
+
+    <RelativeLayout
+        android:background="#964178"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+
+            android:id="@+id/goBack"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_arrow_back_white_24px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/userTitle"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="Rate Us"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_question"
+            android:layout_marginTop="13dp"
+            android:id="@+id/questionMark"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/ic_search"
+            android:layout_toLeftOf="@+id/questionMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

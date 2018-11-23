@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_item_user"
+            android:checked="true"
+            android:icon="@drawable/ic_user"
+            android:title="@string/users" />
+        <item
+            android:id="@+id/nav_item_companies"
+            android:checked="true"
+            android:icon="@drawable/ic_company"
+            android:title="@string/compaines" />
+        <item
+            android:id="@+id/nav_item_setting"
+            android:checked="true"
+            android:icon="@drawable/ic_setting"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/nav_item_about"
+            android:checked="true"
+            android:icon="@drawable/ic_about"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/nav_item_rate_us"
+            android:checked="true"
+            android:icon="@drawable/ic_rate_us"
+            android:title="@string/rate_us" />
+        <item
+            android:id="@+id/nav_item_feed"
+            android:checked="true"
+            android:icon="@drawable/ic_rss_symbol"
+            android:title="@string/feed" />
+        <item
+            android:id="@+id/nav_item_logout"
+            android:checked="true"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="always|withText"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_dashboard"
+        android:title="DashBoard"
+        />
+    <item
+
+        app:showAsAction="always|withText"
+        android:id="@+id/client"
+        android:icon="@drawable/ic_client"
+        android:enabled="true"
+        android:title="Client" />
+
+    <item
+
+
+        app:showAsAction="always|withText"
+        android:id="@+id/Logo"
+        android:enabled="true"
+        android:title=""/>
+
+    <item
+
+        app:showAsAction="always|withText"
+        android:id="@+id/item"
+        android:icon="@drawable/ic_items"
+        android:enabled="true"
+        android:title="Items" />
+    <item
+        app:showAsAction="withText|always"
+        android:id="@+id/report"
+        android:icon="@drawable/ic_report"
+        android:enabled="true"
+        android:title="Sync" />
+
+</menu>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#964178"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ContactUs.ContactUsFragment">
+
+
+
+    <RelativeLayout
+        android:id="@+id/res"
+        android:orientation="horizontal"
+        android:background="#964178"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <ImageView
+
+            android:id="@+id/goBack"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_arrow_back_white_24px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/userTitle"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="Contact Us"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/two"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <EditText
+                android:id="@+id/topic"
+                android:background="#964178"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:hint="Topic to Discuss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_below="@+id/cardView"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#964178"
+            app:cardElevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <TextView
+                android:text="How Can We Help You"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <EditText
+                android:id="@+id/help"
+                android:layout_marginTop="25dp"
+                android:textAlignment="viewStart"
+                android:background="#964178"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/cardView3"
+            android:id="@+id/cardView2"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:background="#964178"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:hint="Your Email Address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:id="@+id/onSubmit"
+            android:textColor="#fff"
+            android:background="@drawable/custom_button"
+            android:text="Submit"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/cardView2"
+            android:layout_width="110dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="#964178"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            android:layout_height="200dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/sms"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:text="info@tallyzee.com"
+                    android:layout_toEndOf="@+id/emailogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/emailogo"
+                    android:src="@drawable/ic_email"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/phonee"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/emailogo"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:text="255-489-5099"
+                    android:layout_toEndOf="@+id/callLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/emailogo"
+                    android:id="@+id/callLogo"
+                    android:src="@drawable/ic_phone_receiver"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/facebook"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/callLogo"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:text="info@tallyzee.com"
+                    android:layout_toEndOf="@+id/facebook1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/callLogo"
+                    android:id="@+id/facebook1"
+                    android:src="@drawable/ic_facebook_logo"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/whatsapp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/facebook"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:text="+91-9930050597"
+                    android:layout_toEndOf="@+id/whatsapp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/facebook"
+                    android:id="@+id/whatsapp1"
+                    android:src="@drawable/ic_whatsapp_logo"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

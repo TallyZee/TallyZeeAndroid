@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.VoucherItem.VoucherInfo">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#964178"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/backpressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:srcCompat="@drawable/ic_arrow_back_white_24px"
+                android:backgroundTint="@color/white"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/HadderText"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/backpressed"
+                android:layout_height="wrap_content"
+                android:text="Sales"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                />
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:src="@drawable/avd_share" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/share"
+                android:layout_marginEnd="@dimen/dp_24"
+
+                android:src="@drawable/ic_icons8_calendar"
+                android:backgroundTint="@color/white"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/hadder"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#E6D1DF">
+
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:fontFamily="@font/avenirltstd_medium"
+            android:text="Aim InfoCom"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_name"
+          android:layout_marginStart="@dimen/dp_8"
+            >
+
+            <TextView
+                android:id="@+id/prieod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:text="As Of 15 Dec 2018"/>
+            <TextView
+                android:id="@+id/Parent_Type"
+                android:layout_toEndOf="@id/prieod"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:text="| All"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/ref_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#ref:12345"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/avenirltstd_medium"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_below="@id/container"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hadder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="vertical">
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="48dp"-->
+
+                <!--android:orientation="horizontal">-->
+                <!--<RelativeLayout-->
+                <!--android:background="#7e7e7e"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_margin="1dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1">-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Net"-->
+                <!--android:textSize="12sp"-->
+                <!--android:layout_marginStart="@dimen/dp_8"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/netAmount"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="16sp"-->
+                <!--android:text="12500.00"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--/>-->
+                <!--<ImageView-->
+                <!--android:layout_width="12.5dp"-->
+                <!--android:layout_height="12.5dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:tint="@color/black"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_toStartOf="@id/netAmount"-->
+                <!--android:src="@drawable/ic_rupee_indian"/>-->
+                <!--</RelativeLayout> <RelativeLayout-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_margin="1dp"-->
+                <!--android:background="#7e7e7e"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/dp_8"-->
+                <!--android:text="Gross"-->
+                <!--android:textSize="12sp"-->
+                <!--android:layout_weight="1"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/grossAmount"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="14500.00"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--/>-->
+                <!--<ImageView-->
+                <!--android:layout_width="12.5dp"-->
+                <!--android:layout_height="12.5dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:tint="@color/black"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_toStartOf="@id/grossAmount"-->
+                <!--android:src="@drawable/ic_rupee_indian"/>    </RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+                <LinearLayout
+android:id="@+id/contanire_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="#F2F1F1"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_below="@id/amountSales"
+                            android:text="Item Info"
+                            android:fontFamily="@font/avenirltstd_medium"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            />
+                    </RelativeLayout> <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:background="#F2F1F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+
+                        android:layout_below="@id/amountValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/avenirltstd_medium"
+                        android:layout_centerHorizontal="true"
+                        android:text="Amount"
+                        />
+                </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/chart"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/imagePalet"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/multiline"-->
+            <!--android:layout_width="@dimen/dp_24"-->
+            <!--android:layout_height="@dimen/dp_24"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:src="@drawable/ic_baseline_multiline_chart_24px"/>-->
+            <!--<ImageView-->
+            <!--android:id="@+id/bar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:layout_toLeftOf="@id/multiline"-->
+            <!--android:src="@drawable/ic_baseline_bar_chart_24px"/>-->
+            <!--<ImageView-->
+            <!--android:id="@+id/pie"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toLeftOf="@id/bar"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:src="@drawable/ic_baseline_pie_chart_24px"-->
+            <!--/>-->
+
+            <!--</RelativeLayout>-->
+            <!--<FrameLayout-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<com.github.mikephil.charting.charts.BarChart-->
+            <!--android:id="@+id/barChart"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="250dp" />-->
+            <!--&lt;!&ndash;<com.github.mikephil.charting.charts.PieChart&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/pieChart"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="250dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+            <!--&lt;!&ndash;&gt;</com.github.mikephil.charting.charts.PieChart>&ndash;&gt;-->
+            <!--&lt;!&ndash;<com.github.mikephil.charting.charts.LineChart&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/lineChart"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="250dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="gone"></com.github.mikephil.charting.charts.LineChart>&ndash;&gt;-->
+            <!--</FrameLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+<TextView
+    android:id="@+id/tv_bill_hadder_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:fontFamily="@font/avenirltstd_medium"
+    android:textColor="@color/colorPrimary"
+    android:layout_marginStart="10dp"
+    android:text="Bill Item"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_Item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginEnd="@dimen/dp_12">
+                <TextView
+                    android:id="@+id/tv_amount_text_hader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirltstd_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Net Amount"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/currcNet"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_rupee_indian"
+                        android:tint="@color/colorPrimary"/>
+                    <TextView
+                        android:id="@+id/amount"
+                        android:text="125000"
+                        android:fontFamily="@font/avenirltstd_mediumoblique"
+                        android:layout_toEndOf="@id/currcNet"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginStart="@dimen/dp_4"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/bank_list"
+                android:layout_margin="@dimen/dp_18"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirltstd_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="SUMMARY"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ledgers"
+                    android:layout_below="@+id/summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="@dimen/dp_18"
+                android:background="@color/white"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cost_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirltstd_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="COST SUMMARY"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cost_cneter_list"
+                    android:layout_below="@+id/cost_text"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="@dimen/dp_18"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/narrtion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirltstd_medium"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="NARRATION"/>
+
+
+
+                <TextView
+                    android:id="@+id/narration_text"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/narrtion"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/avenirltstd_mediumoblique"
+                    android:text="Urgent Order Cash On Delivery"/>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr_shiping_contanier"
+                android:layout_margin="@dimen/dp_18"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/shpping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/avenirltstd_medium"
+                    android:text="SHAPPING"/>
+
+
+                <LinearLayout
+                    android:id="@+id/s1"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shipped By:"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/avenirltstd_mediumoblique"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/avenirltstd_mediumoblique"
+                        android:text="AimInfocom"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/s2"
+                    android:layout_below="@id/s1"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/avenirltstd_mediumoblique"
+                        android:text="Shipped Document ON:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/avenirltstd_mediumoblique"
+                        android:text="Spyder976"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/s3"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_below="@id/s2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Final Destination:"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/avenirltstd_mediumoblique"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mazagoan Dock"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/avenirltstd_mediumoblique"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/party_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_4"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="AIM/17/2017"
+        android:layout_marginLeft="@dimen/dp_18" />
+    <TextView
+        android:layout_below="@id/party_Name"
+        android:id="@+id/voucher_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_18"
+        android:text="Engicon Construction"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_12"
+        android:fontFamily="@font/avenir_heavy"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/dp_12" />
+   <TextView
+       android:id="@+id/amount"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="12000.00"
+       android:textSize="@dimen/sp_12"
+       android:textColor="@color/black"
+       android:layout_margin="12dp"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentRight="true" />
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount"
+        android:text="12/05/16"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/black"
+        android:layout_margin="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+    <View
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:layout_below="@id/voucher_text"
+
+        android:layout_height="2dp"/>
+
+</RelativeLayout>

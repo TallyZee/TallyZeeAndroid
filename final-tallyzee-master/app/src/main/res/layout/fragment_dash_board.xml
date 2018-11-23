@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#e7e7e7"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="outsideInset"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.ListDashBoardFragment.DashBoardFragment">
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_dash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7e7e7"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10sp"
+            android:id="@+id/list_newdash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fcfcfc"/>
+        </RelativeLayout>
+    </ScrollView>
+        <FrameLayout
+            android:id="@+id/dashLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--<ProgressBar-->
+            <!--android:layout_gravity="center_vertical|center_horizontal"-->
+            <!--android:id="@+id/barr"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+
+
+
+
+
+</RelativeLayout>

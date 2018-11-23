@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ClientDetails.SummaryFragment.SummaryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+       android:id="@+id/header"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <RelativeLayout
+           android:id="@+id/relativeee"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/recyclerViewNew"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </android.support.v7.widget.RecyclerView>
+
+       </RelativeLayout>
+
+
+       <RelativeLayout
+           android:layout_below="@+id/relativeee"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+       <android.support.v7.widget.RecyclerView
+           android:layout_below="@+id/list"
+           android:layout_marginTop="10dp"
+           android:id="@+id/receiptRecyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+           <android.support.v7.widget.RecyclerView
+               android:layout_below="@+id/receiptRecyclerView"
+               android:layout_marginTop="10dp"
+               android:id="@+id/payableRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <android.support.v7.widget.RecyclerView
+               android:layout_below="@+id/payableRecyclerView"
+               android:layout_marginTop="10dp"
+               android:id="@+id/receivableRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <android.support.v7.widget.RecyclerView
+               android:layout_below="@+id/receivableRecyclerView"
+               android:layout_marginTop="10dp"
+               android:id="@+id/debitRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <android.support.v7.widget.RecyclerView
+               android:layout_below="@+id/debitRecyclerView"
+               android:layout_marginTop="10dp"
+               android:id="@+id/creditRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <android.support.v7.widget.RecyclerView
+               android:layout_below="@+id/creditRecyclerView"
+               android:layout_marginTop="10dp"
+               android:id="@+id/paymentRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           
+           <android.support.v7.widget.CardView
+               android:id="@+id/cardd"
+               android:layout_below="@+id/paymentRecyclerView"
+               android:layout_width="match_parent"
+               android:layout_height="50dp">
+
+               <RelativeLayout
+                   android:paddingRight="10dp"
+                   android:paddingLeft="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:fontFamily="@font/avenirltstd_medium"
+                       android:textColor="@color/colorPrimary"
+                       android:text="Pending Sales Order"
+                       android:textSize="18sp"
+                       android:layout_centerVertical="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <TextView
+                       android:fontFamily="@font/avenirltstd_medium"
+                       android:textColor="@color/colorPrimary"
+                       android:text="120000"
+                       android:layout_centerVertical="true"
+                       android:id="@+id/pendingAmount"
+                       android:layout_alignParentEnd="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+
+                   <ImageView
+                       android:layout_centerVertical="true"
+                       android:layout_toStartOf="@id/pendingAmount"
+                       android:id="@+id/pendingRupe"
+                       android:layout_width="13dp"
+                       android:layout_height="13dp"
+                       android:src="@drawable/ic_rupee_indian"
+                       android:tint="@color/colorPrimary"/>
+
+               </RelativeLayout>
+           </android.support.v7.widget.CardView>
+
+           <android.support.v7.widget.CardView
+               android:id="@+id/card2"
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/cardd"
+               android:layout_width="match_parent"
+               android:layout_height="50dp">
+
+               <RelativeLayout
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <TextView
+                       android:fontFamily="@font/avenirltstd_medium"
+                       android:textColor="@color/colorPrimary"
+                       android:text="Pending Purchase Order"
+                       android:textSize="18sp"
+                       android:layout_centerVertical="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <TextView
+                       android:fontFamily="@font/avenirltstd_medium"
+                       android:textColor="@color/colorPrimary"
+                       android:text="120000"
+                       android:layout_centerVertical="true"
+                       android:id="@+id/purchaseAmount"
+                       android:layout_alignParentEnd="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <ImageView
+                       android:layout_centerVertical="true"
+                       android:layout_toStartOf="@id/purchaseAmount"
+                       android:id="@+id/purchaserupp"
+                       android:layout_width="13dp"
+                       android:layout_height="13dp"
+                       android:src="@drawable/ic_rupee_indian"
+                       android:tint="@color/colorPrimary"/>
+
+               </RelativeLayout>
+           </android.support.v7.widget.CardView>
+       </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</RelativeLayout>
+
+   </RelativeLayout>
+
+</ScrollView>
